@@ -16,4 +16,5 @@
 
   gctx = pkgs.callPackage ./pkgs/gctx { };
   kubectl-reveal-secret = pkgs.callPackage ./pkgs/kubectl-reveal-secret { };
+  slack-cli = pkgs.callPackage ./pkgs/slack-cli { };
 }
