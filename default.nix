@@ -14,4 +14,5 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
+  gctx = pkgs.callPackage ./pkgs/gctx { };
 }
