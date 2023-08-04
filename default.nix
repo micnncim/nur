@@ -15,4 +15,5 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   gctx = pkgs.callPackage ./pkgs/gctx { };
+  kubectl-reveal-secret = pkgs.callPackage ./pkgs/kubectl-reveal-secret { };
 }
