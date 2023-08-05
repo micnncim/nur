@@ -2,16 +2,16 @@
 
 rustPlatform.buildRustPackage rec {
   pname = "kubectl-reveal";
-  version = "0.2.0";
+  version = "0.3.0";
 
   src = fetchFromGitHub {
     owner = "micnncim";
     repo = pname;
     rev = "v${version}";
-    sha256 = "sha256-5fIaLqz9chzuaOErt94n90PY+uH5FW6U8r72ps5e6W8=";
+    sha256 = "sha256-e/7Q0RhpEO8QeW+Z3ntqRlWFnxtEINKIheu3SSd1054=";
   };
 
-  cargoSha256 = "sha256-7XACFVqn9gSHnvKT0eUXO6CBE9gKNnYvJj3xV5oU1kE=";
+  cargoSha256 = "sha256-LnAmJbz2A7REY8LrzE1goMwsD5BEw5TiwBSB7Hxu/os=";
 
   nativeBuildInputs = with pkgs;[
     installShellFiles
