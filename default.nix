@@ -15,6 +15,7 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   gctx = pkgs.callPackage ./pkgs/gctx { };
+  gh-sync = pkgs.callPackage ./pkgs/gh-sync { };
   kubectl-reveal-secret = pkgs.callPackage ./pkgs/kubectl-reveal { };
   slack-cli = pkgs.callPackage ./pkgs/slack-cli { };
 }
