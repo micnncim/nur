@@ -17,6 +17,7 @@
   gctx = pkgs.callPackage ./pkgs/gctx { };
   gh-sync = pkgs.callPackage ./pkgs/gh-sync { };
   kubectl-reveal-secret = pkgs.callPackage ./pkgs/kubectl-reveal { };
+  mockgen = pkgs.callPackage ./pkgs/mockgen { };
   slack-cli = pkgs.callPackage ./pkgs/slack-cli { };
   tfcmt = pkgs.callPackage ./pkgs/tfcmt { };
 }
