@@ -2,13 +2,13 @@
 
 stdenv.mkDerivation rec {
   pname = "gctx";
-  version = "0.1.0";
+  version = "0.2.0";
 
   src = fetchFromGitHub {
     owner = "micnncim";
     repo = "gctx";
     rev = "v${version}";
-    sha256 = "sha256-D9qJ8Zk7kJQ9lfRDVOFvKBretLPu+Vz+crn5Y7u+jEk=";
+    sha256 = "sha256-AvH8ITe62QE1j95oJpUdgWYRRXFuxxdJchy29lwx72c=";
   };
 
   buildInputs = [ makeWrapper ];
