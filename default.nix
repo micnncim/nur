@@ -14,6 +14,7 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
+  apollo-ios-cli = pkgs.callPackage ./pkgs/apollo-ios-cli { };
   gctx = pkgs.callPackage ./pkgs/gctx { };
   gh-sync = pkgs.callPackage ./pkgs/gh-sync { };
   gqlgen = pkgs.callPackage ./pkgs/gqlgen { };
