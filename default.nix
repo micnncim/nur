@@ -22,4 +22,5 @@
   mockgen = pkgs.callPackage ./pkgs/mockgen { };
   slack-cli = pkgs.callPackage ./pkgs/slack-cli { };
   tfcmt = pkgs.callPackage ./pkgs/tfcmt { };
+  vfkit = pkgs.lib.optionalAttrs pkgs.stdenv.isDarwin (pkgs.callPackage ./pkgs/vfkit { });
 }
