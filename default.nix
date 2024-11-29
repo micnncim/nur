@@ -16,6 +16,7 @@
 
   apollo-ios-cli = pkgs.callPackage ./pkgs/apollo-ios-cli { };
   gctx = pkgs.callPackage ./pkgs/gctx { };
+  gh-pr-status = pkgs.callPackage ./pkgs/gh-pr-status { };
   gh-sync = pkgs.callPackage ./pkgs/gh-sync { };
   gqlgen = pkgs.callPackage ./pkgs/gqlgen { };
   kubectl-reveal-secret = pkgs.callPackage ./pkgs/kubectl-reveal { };
