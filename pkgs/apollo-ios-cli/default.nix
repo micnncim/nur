@@ -13,7 +13,6 @@ pkgs.stdenv.mkDerivation rec {
   sourceRoot = ".";
 
   installPhase = ''
-    mkdir -p $out/bin
-    cp -vr ./apollo-ios-cli $out/bin/apollo-ios-cli
+    install -Dm755 ./apollo-ios-cli $out/bin/apollo-ios-cli
   '';
 }

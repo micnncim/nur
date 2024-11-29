@@ -14,7 +14,6 @@ stdenv.mkDerivation rec {
   buildInputs = [ makeWrapper ];
 
   installPhase = ''
-    mkdir -p $out/bin
-    install $src/gctx $out/bin
+    install -Dm755 $src/gctx $out/bin/gctx
   '';
 }

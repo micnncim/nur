@@ -14,7 +14,6 @@ stdenv.mkDerivation rec {
   buildInputs = [ makeWrapper ];
 
   installPhase = ''
-    mkdir -p $out/bin
-    install $src/gh-sync $out/bin
+    install -Dm755 $src/gh-sync $out/bin/gh-sync
   '';
 }
